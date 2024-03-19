@@ -4,3 +4,20 @@
   box-sizing: border-box;
 }
 
+:root {
+  /* Change Later: Montserrat, Open Sans, or Source Sans Pro? */
+  --main-font: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  font-family: var(--main-font);
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+}

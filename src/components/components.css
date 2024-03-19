@@ -1,0 +1,32 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 3em;
+}
+
+nav {
+    display: flex;
+    gap: 1em;
+}
+
+footer {
+    padding: 2em;
+    background-color: #111112;
+    color: #fafafa;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-links-container {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+
+.footer-links-container img {
+    height: 35px;
+    width: 35px;
+}
