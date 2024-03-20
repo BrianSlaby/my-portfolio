@@ -5,8 +5,12 @@ export default function Home() {
     return(
         <div className="home-container">
             <section id="hero-section">
-                <h1>Home Page placeholder</h1>
+                <h1>Brian Slaby</h1>
+                <p>Frontend Developer</p>
 
+                {
+                    // create animated down arrows
+                }
             </section>
 
             <section id="about-section">

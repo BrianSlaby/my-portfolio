@@ -7,6 +7,10 @@
 :root {
   /* Change Later: Montserrat, Open Sans, or Source Sans Pro? */
   --main-font: Arial, Helvetica, sans-serif;
+
+  --black-clr: #111112;
+  --white-clr: #fafafa;
+  --lt-gray-clr: #e6e9eb;
 }
 
 html,
@@ -21,6 +25,10 @@ h2,
 h3,
 .header-title {
   text-transform: uppercase;
+}
+
+h1 {
+  font-size: 2.5rem;
 }
 
 .header-title {

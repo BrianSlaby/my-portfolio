@@ -4,6 +4,7 @@ header {
     align-items: flex-start;
     justify-content: space-between;
     padding: 1em 3em;
+    background-color: var(--lt-gray-clr);
 }
 
 nav {
@@ -15,13 +16,15 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #111112;
+    color: var(--black-clr);
+    font-size: 1.125rem;
+    text-transform: uppercase;
 }
 
 footer {
     padding: 2em;
-    background-color: #111112;
-    color: #fafafa;
+    background-color: var(--black-clr);
+    color: var(--white-clr);
     position: absolute;
     bottom: 0;
     width: 100%;
