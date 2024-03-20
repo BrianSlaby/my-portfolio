@@ -6,7 +6,7 @@ export default function Home() {
         <div className="home-container">
             <section id="hero-section">
                 <h1>Brian Slaby</h1>
-                <p className="section-subheading">Frontend Developer</p>
+                <p className="section-subheading hero-subheading">Frontend Developer</p>
 
                 {
                     // create animated down arrows
@@ -15,6 +15,7 @@ export default function Home() {
 
             <section id="about-section">
                 <h2>About Me</h2>
+                <div className="accent-line"></div>
                 <p className="section-subheading">Here you will find more information about me, what I do, and my technical skills.</p>
 
                 <div className="section-col-container">
@@ -48,12 +49,26 @@ export default function Home() {
 
             <section id="projects-section">
                 <h2>Projects</h2>
+                <div className="accent-line accent-reverse"></div>
                 <p className="section-subheading">Here you will find information about some of the projects I've created.</p>
             </section>
 
             <section id="contact-section">
                 <h2>Contact Me</h2>
-                <p className="section-subheading">Feel free to contact me using the form below, and I'll get back to you as soon as I am able.</p>
+                <div className="accent-line"></div>
+                <div className="section-col-container">
+
+                    <div className="section-col">
+                        <p>Whether you have a job opportunity that matches my skills and experience, have questions about my work, or just want to say hello feel free to contact me. I can be reached at <span className="bold-text">brian.slaby@gmail.com</span>. You can also connect with me on <a href="https://www.linkedin.com/in/brian-slaby-78022388/">LinkedIn</a>, or check out the source code for my projects on <a href="https://github.com/BrianSlaby">GitHub</a>.</p>
+                    </div>
+
+                    <div className="section-col">
+
+                    </div>
+
+                    
+                </div>
+                
             </section>
         </div>
     )

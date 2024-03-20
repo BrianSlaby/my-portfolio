@@ -12,6 +12,8 @@
   --black-clr: #111112;
   --white-clr: #fafafa;
   --lt-gray-clr: #e6e9eb;
+  --md-gray-clr: #e3e3e3;
+  --dk-gray-clr: #575757;
 }
 
 html,
@@ -30,25 +32,46 @@ h3,
 
 h1 {
   font-size: 4rem;
+  letter-spacing: 5px;
   text-align: center;
-  margin-top: 20vh;
+  margin-top: 30vh;
+}
+
+h2,
+h3,
+.header-title {
+  letter-spacing: 2px;
 }
 
 p {
   line-height: 1.5em;
+  letter-spacing: 1px;
 }
 
 section {
   padding: 4em 2em;
 }
 
+.bold-text {
+  font-weight: 700;
+}
+
+.accent-line {
+  background-color: var(--primary-clr);
+  border-radius: 5px;
+  height: 5px;
+  width: 200px;
+  margin: 0 auto 2em;
+}
+
+.accent-reverse {
+  background-color: var(--white-clr);
+}
+
 .header-title {
   font-weight: 700;
   font-size: 1.375rem;
-}
-
-.home-container {
-  padding: 2em;
+  margin-right: 2em;
 }
 
 section > h2,
@@ -61,10 +84,48 @@ section > p {
   margin-bottom: 3em;
 }
 
+.hero-subheading {
+  font-size: 1.375rem;
+}
+
 .section-col-container {
   display: flex;
   flex-direction: column;
 }
+
+#hero-section,
+#projects-section {
+  background-color: var(--primary-clr);
+  color: var(--white-clr);
+  text-shadow: 0 0 2px var(--black-clr);
+}
+
+#hero-section {
+  min-height: 100vh;
+  background-image: url(/public/images/hero-bg.jpg);
+  background-size: cover;
+  background-blend-mode: soft-light;
+}
+
+#about-section,
+#contact-section {
+  background-color: var(--white-clr);
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill {
+  background-color: var(--md-gray-clr);
+  color: var(--dk-gray-clr);
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 0.5em 0.9em;
+  margin: 0.5em;
+}
+
 
 @media (min-width: 700px) {
   .section-col-container {
@@ -76,21 +137,4 @@ section > p {
   .section-col {
     max-width: 40%;
   }
-}
-
-
-#hero-section {
-  min-height: 100vh;
-}
-
-.skills-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.skill {
-  background-color: var(--lt-gray-clr);
-  border-radius: 5px;
-  padding: 0.5em 0.75em;
-  margin: 0.5em;
 }

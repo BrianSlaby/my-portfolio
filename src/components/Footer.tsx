@@ -19,6 +19,8 @@ export default function Footer() {
                     </a>
                 </div>
             </div>
+            <p className="small-text">Background image by <a href="https://unsplash.com/@pawel_czerwinski?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Pawel Czerwinski</a> on <a href="https://unsplash.com/photos/a-blurry-photo-of-a-black-and-green-background-RmMCdS-Nh74?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  </p>
             <p className="small-text">Updated 2024</p>
         </footer>
     )
