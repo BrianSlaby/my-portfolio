@@ -8,6 +8,7 @@
   /* Change Later: Montserrat, Open Sans, or Source Sans Pro? */
   --main-font: Arial, Helvetica, sans-serif;
 
+  --primary-clr: #0e71c2;
   --black-clr: #111112;
   --white-clr: #fafafa;
   --lt-gray-clr: #e6e9eb;
@@ -28,14 +29,68 @@ h3,
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 20vh;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+section {
+  padding: 4em 2em;
 }
 
 .header-title {
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: 1.375rem;
 }
 
 .home-container {
   padding: 2em;
+}
+
+section > h2,
+section > p {
+  text-align: center;
+}
+
+.section-subheading {
+  font-size: 1.125rem;
+  margin-bottom: 3em;
+}
+
+.section-col-container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 700px) {
+  .section-col-container {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-around;
+  }
+
+  .section-col {
+    max-width: 40%;
+  }
+}
+
+
+#hero-section {
+  min-height: 100vh;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill {
+  background-color: var(--lt-gray-clr);
+  border-radius: 5px;
+  padding: 0.5em 0.75em;
+  margin: 0.5em;
 }
