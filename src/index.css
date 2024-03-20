@@ -18,6 +18,16 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+.header-title {
   text-transform: uppercase;
+}
+
+.header-title {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.home-container {
+  padding: 2em;
 }

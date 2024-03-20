@@ -1,13 +1,21 @@
 header {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: space-between;
     padding: 1em 3em;
 }
 
 nav {
     display: flex;
-    gap: 1em;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #111112;
 }
 
 footer {
@@ -29,4 +37,20 @@ footer {
 .footer-links-container img {
     height: 35px;
     width: 35px;
+}
+
+.small-text {
+    font-size: 0.75rem;
+}
+
+@media (min-width: 630px) {
+    header {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    nav {
+        flex-direction: row;
+        align-items: center;
+    }
 }

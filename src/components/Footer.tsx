@@ -19,6 +19,7 @@ export default function Footer() {
                     </a>
                 </div>
             </div>
+            <p className="small-text">Updated 2024</p>
         </footer>
     )
 }
