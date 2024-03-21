@@ -11,6 +11,11 @@ export default function Home() {
                 {
                     // create animated down arrows
                 }
+                <div className="arrow-container">
+                    <div className="arrow"></div>
+                    <div className="arrow"></div>
+                    <div className="arrow"></div>
+                </div>
             </section>
 
             <section id="about-section">

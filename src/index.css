@@ -68,6 +68,49 @@ section {
   background-color: var(--white-clr);
 }
 
+.arrow-container {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.arrow {
+  width: 25px;
+  height: 25px;
+  border-bottom: 2px solid var(--white-clr);
+  border-right: 2px solid var(--white-clr);
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+
+.arrow:nth-child(1) {
+  animation-delay: 0.6s;
+}
+
+.arrow:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.arrow:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
+}
+
 .header-title {
   font-weight: 700;
   font-size: 1.375rem;
@@ -105,6 +148,7 @@ section > p {
   background-image: url(/public/images/hero-bg.jpg);
   background-size: cover;
   background-blend-mode: soft-light;
+  position: relative;
 }
 
 #about-section,
