@@ -8,7 +8,7 @@ export default function Header() {
             <div className="header-content">
                 <p className="header-title">Brian Slaby</p>
                 <nav>
-                    <Link to="/">Home</Link>
+                    <Link to="/#hero-section">Home</Link>
                     <Link to="/#about-section">About Me</Link>
                     <Link to="/#projects-section">Projects</Link>
                     <Link to="/#contact-section">Contact Me</Link>

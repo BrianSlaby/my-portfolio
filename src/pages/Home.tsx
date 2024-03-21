@@ -1,16 +1,20 @@
-
+import { useEffect } from "react"
 
 export default function Home() {
+
+    // useEffect(() => {
+    //     const id = window.location.hash.substring(1)
+    //     const element = document.getElementById(id)
+    //     if (element) {
+    //         element.scrollIntoView()
+    //     }
+    // }, [])
 
     return(
         <div className="home-container">
             <section id="hero-section">
                 <h1>Brian Slaby</h1>
                 <p className="section-subheading hero-subheading">Frontend Developer</p>
-
-                {
-                    // create animated down arrows
-                }
                 <div className="arrow-container">
                     <div className="arrow"></div>
                     <div className="arrow"></div>
