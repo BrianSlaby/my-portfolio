@@ -137,6 +137,26 @@ section > p {
   flex-direction: column;
 }
 
+.section-col {
+  /* border: 1px solid green; */
+}
+
+.col-translate {
+  justify-self: flex-start;
+}
+
+.img-container {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.contact-img {
+  max-width: 300px;
+  position: relative;
+}
+
+
 #hero-section,
 #projects-section {
   background-color: var(--primary-clr);
@@ -146,9 +166,10 @@ section > p {
 
 #hero-section {
   min-height: 100vh;
-  background-image: url(/public/images/hero-bg.jpg);
+  /* background-image: url(/public/images/hero-bg.jpg); */
+  background-image: url(/public/images/sun-tornado.svg);
   background-size: cover;
-  background-blend-mode: soft-light;
+  /* background-blend-mode: soft-light; */
   position: relative;
 }
 
@@ -181,5 +202,16 @@ section > p {
 
   .section-col {
     max-width: 40%;
+  }
+
+  .contact-img {
+    transform: translateX(0) translateY(-2em);
+  }
+
+}
+
+@media (min-width: 900px) {
+  .contact-img {
+    transform: translateX(-30%) translateY(-2em);
   }
 }

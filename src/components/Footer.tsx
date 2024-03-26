@@ -19,8 +19,8 @@ export default function Footer() {
                     </a>
                 </div>
             </div>
-            <p className="small-text">Background image by <a href="https://unsplash.com/@pawel_czerwinski?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Pawel Czerwinski</a> on <a href="https://unsplash.com/photos/a-blurry-photo-of-a-black-and-green-background-RmMCdS-Nh74?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-  </p>
+            <p className="small-text">Background image by <a target="_blank" href="https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/"> SVGBackgrounds.com</a>.  Email Vectors image by <a target="_blank" href="https://www.vecteezy.com/free-vector/email">Vecteezy</a>.</p>
+
             <p className="small-text">Updated 2024</p>
         </footer>
     )
