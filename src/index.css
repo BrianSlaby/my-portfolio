@@ -50,6 +50,7 @@ p {
 
 section {
   padding: 4em 2em;
+  scroll-margin-top: 6.5em;
 }
 
 .bold-text {
