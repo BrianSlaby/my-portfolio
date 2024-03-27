@@ -6,7 +6,7 @@
 
 :root {
   /* Change Later: Montserrat, Open Sans, or Source Sans Pro? */
-  --main-font: Arial, Helvetica, sans-serif;
+  --main-font: "Open Sans", sans-serif;
 
   --primary-clr: #0e71c2;
   --black-clr: #111112;
