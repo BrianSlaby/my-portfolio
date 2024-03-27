@@ -14,7 +14,7 @@ export default function Contact() {
 
                 <div className="section-col col-translate">
                     <div className="img-container">
-                        <img className="contact-img" src="/public/images/vecteezy-email.svg" alt=""/>
+                        <img className="contact-img" src="/public/images/vecteezy-email.svg" alt="Disembodied cartoon hand holding a smartphone next to an open laptop, with a floating cartoon email icon suggesting email being sent or received."/>
                     </div>
                 </div>
 

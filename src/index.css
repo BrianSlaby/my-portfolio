@@ -57,6 +57,17 @@ section {
   font-weight: 700;
 }
 
+.link-btn-style {
+  display: inline-block;
+  margin-top: 3em;
+  text-decoration: none;
+  text-shadow: none;
+  font-weight: 700;
+  background-color: lightcoral;
+  padding: 0.5em 1.25em;
+  border-radius: 8px;
+}
+
 .accent-line {
   background-color: var(--primary-clr);
   border-radius: 5px;
@@ -135,6 +146,8 @@ section > p {
 .section-col-container {
   display: flex;
   flex-direction: column;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .section-col {
@@ -151,11 +164,19 @@ section > p {
   text-align: center;
 }
 
+.project-img-container {
+  align-self: center;
+}
+
+.project-img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
 .contact-img {
   max-width: 300px;
   position: relative;
 }
-
 
 #hero-section,
 #projects-section {
@@ -192,6 +213,10 @@ section > p {
   margin: 0.5em;
 }
 
+.project-info {
+  align-self: center;
+}
+
 
 @media (min-width: 700px) {
   .section-col-container {
@@ -202,6 +227,10 @@ section > p {
 
   .section-col {
     max-width: 40%;
+  }
+
+  .project-info {
+    width: 40%;
   }
 
   .contact-img {
