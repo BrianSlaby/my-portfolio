@@ -4,11 +4,14 @@ export default function About() {
 
     return (
         <section id="about-section">
-            <h2>About Me</h2>
-            <div className="accent-line">  </div>
-            <p className="section-subheading">Here you will find more information about me, what I do, and my technical skills.</p>
+            <div className="section-header">
+                <h2>About Me</h2>
+                <div className="accent-line">  </div>
+                <p className="section-subheading">Here you will find more information about me, what I do, and my technical skills.</p>
+            </div>
+            
 
-            <div className="section-col-container">
+            <div className="about-container">
                 <div className="section-col">
                     <h3>Get to know me</h3>
                     <p>I'm a <strong>frontend developer</strong> in the Cleveland, Ohio area. I build apps and websites with an emphasis on <strong>clean code</strong>. Organization and clarity result in a code base that's easier to read, easier to maintain, and easier to debug.</p>
