@@ -87,6 +87,13 @@ section {
   background-color: var(--lt-gray-clr);
 }
 
+.center-btn {
+  display: block;
+  margin: 3em auto;
+  text-align: center;
+  width: 200px;
+}
+
 .accent-line {
   background-color: var(--primary-clr);
   border-radius: 5px;
@@ -170,14 +177,14 @@ section {
   text-align: center;
 }
 
-#hero-section,
+.hero-section,
 #projects-section {
   background-color: var(--primary-clr);
   color: var(--white-clr);
   text-shadow: 0 0 2px var(--black-clr);
 }
 
-#hero-section {
+.hero-section {
   min-height: 100vh;
   /* CHANGE URL BEFORE DEPLOYING */
   background-image: url(/public/images/sun-tornado.svg);
@@ -223,6 +230,11 @@ section {
 .contact-img {
   max-width: 300px;
   position: relative;
+}
+
+.project-hero-container {
+  max-width: 750px;
+  margin: 0 auto;
 }
 
 /* ==========================
