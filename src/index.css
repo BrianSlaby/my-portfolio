@@ -87,13 +87,6 @@ section {
   background-color: var(--lt-gray-clr);
 }
 
-.center-btn {
-  display: block;
-  margin: 3em auto;
-  text-align: center;
-  width: 200px;
-}
-
 .accent-line {
   background-color: var(--primary-clr);
   border-radius: 5px;

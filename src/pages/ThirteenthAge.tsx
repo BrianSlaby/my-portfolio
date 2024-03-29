@@ -1,7 +1,8 @@
+import React from "react"
 import ProjectHero from "../components/ProjectHero"
 
 
-export default function ThirteenthAge() {
+export default function ThirteenthAge(): React.ReactNode {
 
     return (
         <>

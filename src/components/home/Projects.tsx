@@ -1,6 +1,7 @@
+import React from "react"
 import { Link } from "react-router-dom"
 
-export default function Projects() {
+export default function Projects(): React.ReactNode {
 
 
     return (

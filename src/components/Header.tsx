@@ -1,7 +1,8 @@
+import React from "react"
 import { Link } from "react-router-dom"
 import './components.css'
 
-export default function Header() {
+export default function Header(): React.ReactNode {
 
     return(
         <header>

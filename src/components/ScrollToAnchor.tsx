@@ -1,10 +1,10 @@
-import { useEffect, useRef } from "react"
+import React, { useEffect, useRef } from "react"
 import { useLocation } from "react-router-dom"
 
 // Solution for using hash links to scroll to IDs in React Router 6 found here:
 // https://dev.to/mindactuate/scroll-to-anchor-element-with-react-router-v6-38op
 
-export default function ScrollToAnchor() {
+export default function ScrollToAnchor(): React.ReactNode {
     const location = useLocation()
     const lastHash = useRef('')
 

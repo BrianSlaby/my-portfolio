@@ -1,7 +1,8 @@
+import React from "react"
 import ProjectHero from "../components/ProjectHero"
 
 
-export default function Quizzical() {
+export default function Quizzical(): React.ReactNode {
 
     return (
         <>

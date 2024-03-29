@@ -1,11 +1,11 @@
-
+import React from "react"
 
 type headerProps = {
     title: string,
     description: string
 }
 
-export default function ProjectHero({ title, description }: headerProps) {
+export default function ProjectHero({ title, description }: headerProps): React.ReactNode {
 
     return (
         <section className="hero-section">

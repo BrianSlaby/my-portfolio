@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Layout from "./components/Layout"
 import ScrollToAnchor from "./components/ScrollToAnchor"
@@ -9,7 +9,7 @@ import ThirteenthAge from "./pages/ThirteenthAge"
 import Quizzical from "./pages/Quizzical"
 
 
-export default function App() {
+export default function App(): React.ReactNode {
   
 
   return (

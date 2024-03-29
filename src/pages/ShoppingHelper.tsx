@@ -1,6 +1,7 @@
+import React from "react"
 import ProjectHero from "../components/ProjectHero"
 
-export default function ShoppingHelper() {
+export default function ShoppingHelper(): React.ReactNode {
 
     return (
         <>
