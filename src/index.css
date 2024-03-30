@@ -222,10 +222,18 @@ section {
 .projects-container, 
 .contact-container {
   display: grid;
-  align-items: center;
   column-gap: 15%;
   row-gap: 4em;
   padding: 2em 4em;
+}
+
+.about-container {
+  align-items: start;
+}
+
+.projects-container,
+.contact-container {
+  align-items: center;
 }
 
 .project-img {
