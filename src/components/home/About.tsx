@@ -21,21 +21,21 @@ export default function About(): React.ReactNode {
 
                 <div className="section-col">
                     <h3>My Skills</h3>
-                    <div className="skills-container">
-                        <div className="skill"> JavaScript </div>
-                        <div className="skill"> TypeScript </div>
-                        <div className="skill"> React </div>
-                        <div className="skill"> HTML </div>
-                        <div className="skill"> CSS </div>
-                        <div className="skill"> SQL </div>
-                        <div className="skill"> Git </div>
-                        <div className="skill"> GitHub </div>
-                        <div className="skill"> Google Firebase </div>
-                        <div className="skill"> Jasmine </div>
-                        <div className="skill"> npm </div>
-                        <div className="skill"> Vite </div>
-                        <div className="skill"> Netlify </div>
-                    </div>
+                    <ul className="skills-container">
+                        <li className="skill"> JavaScript </li>
+                        <li className="skill"> TypeScript </li>
+                        <li className="skill"> React </li>
+                        <li className="skill"> HTML </li>
+                        <li className="skill"> CSS </li>
+                        <li className="skill"> SQL </li>
+                        <li className="skill"> Git </li>
+                        <li className="skill"> GitHub </li>
+                        <li className="skill"> Google Firebase </li>
+                        <li className="skill"> Jasmine </li>
+                        <li className="skill"> npm </li>
+                        <li className="skill"> Vite </li>
+                        <li className="skill"> Netlify </li>
+                    </ul>
                 </div>
             </div>
         </section>

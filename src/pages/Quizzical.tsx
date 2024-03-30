@@ -12,13 +12,19 @@ export default function Quizzical(): React.ReactNode {
 
             
 
+            <section>
+                <div className="section-header">
+                    <h2>Project Details</h2>
+                    <div className="accent-line">  </div>
+                </div>
 
 
-            <ProjectLinks 
-                liveUrl="https://quizzical-bslaby.netlify.app/"
-                githubUrl="https://github.com/BrianSlaby/quizzical"
-            />
-            
+                <ProjectLinks 
+                    liveUrl="https://quizzical-bslaby.netlify.app/"
+                    githubUrl="https://github.com/BrianSlaby/quizzical"
+                />
+            </section>
+
         </div>
     )
 }
