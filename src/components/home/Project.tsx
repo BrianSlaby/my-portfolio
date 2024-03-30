@@ -25,7 +25,7 @@ export default function Project({ src, alt, title, linkTo, description }: projec
                 <h3>{title}</h3>
                 <p>{description}</p>
                 <Link 
-                    className="link-btn-style" 
+                    className="link-btn-style link-btn-light" 
                     to={linkTo}>Learn More</Link>
             </div>
         </>

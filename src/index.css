@@ -66,11 +66,19 @@ section {
   text-decoration: none;
   text-shadow: none;
   font-weight: 700;
-  color: var(--primary-clr);
-  background-color: var(--white-clr);
   padding: 0.5em 1.25em;
   border-radius: 8px;
   transition: transform 0.3s;
+}
+
+.link-btn-light {
+  color: var(--primary-clr);
+  background-color: var(--white-clr);
+}
+
+.link-btn-dark {
+  color: var(--white-clr);
+  background-color: var(--primary-clr);
 }
 
 .link-btn-style:hover,
@@ -82,9 +90,13 @@ section {
   transform: scale(0.95);
 }
 
-.link-btn-style:visited {
+.link-btn-light:visited {
   color: var(--primary-clr);
   background-color: var(--lt-gray-clr);
+}
+
+.link-btn-dark:visited {
+  color: var(--md-gray-clr);
 }
 
 .accent-line {
@@ -186,7 +198,8 @@ section {
 }
 
 #about-section,
-#contact-section {
+#contact-section,
+.project-main-container {
   background-color: var(--lt-gray-clr);
 }
 
@@ -228,6 +241,19 @@ section {
 .project-hero-container {
   max-width: 750px;
   margin: 0 auto;
+}
+
+.project-main-container {
+  min-height: 100vh;
+  margin: 0;
+  padding-bottom: 3em;
+}
+
+.project-links-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 2em auto;
+  max-width: 650px;
 }
 
 /* ==========================
