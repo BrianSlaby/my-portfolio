@@ -24,7 +24,7 @@ export default function Projects(): React.ReactNode {
                 />
 
                 <Project 
-                    src="/public/images/13a-tracker-capture.png"
+                    src="/public/images/13a-tracker-capture4.png"
                     alt=""
                     title="13th Age Monster Tracker"
                     linkTo="/13a-monster-tracker"
@@ -33,7 +33,7 @@ export default function Projects(): React.ReactNode {
                 
                     
                 <Project 
-                    src="/public/images/quizzical-capture.png"
+                    src="/public/images/quizzical-capture4.png"
                     alt=""
                     title="Quizzical"
                     linkTo="/quizzical"
