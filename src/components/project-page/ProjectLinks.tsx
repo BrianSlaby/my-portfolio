@@ -1,9 +1,5 @@
 import React from "react"
-
-type projectLinksProps = {
-    liveUrl: string,
-    githubUrl: string
-}
+import { projectLinksProps } from "../../types"
 
 export default function ProjectLinks({ liveUrl, githubUrl }: projectLinksProps): React.ReactNode {
 

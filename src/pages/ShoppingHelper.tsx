@@ -4,6 +4,7 @@ import ProjectLinks from "../components/project-page/ProjectLinks"
 import Overview from "../components/shopping-helper/Overview"
 import Features from "../components/shopping-helper/Features"
 import Tech from "../components/shopping-helper/Tech"
+import Gallery from "../components/shopping-helper/Gallery"
 
 export default function ShoppingHelper(): React.ReactNode {
 
@@ -25,36 +26,7 @@ export default function ShoppingHelper(): React.ReactNode {
 
                 <Tech />
 
-                <div className="gallery-container">
-                    <figure className="gallery-figure">
-                        <img 
-                            className="gallery-img" 
-                            src="/public/images/shopping-helper-capture.png"
-                            alt=""
-                        />
-                        <figcaption>Shopping Helper authentication screen.</figcaption>
-                    </figure>
-
-                    <figure className="gallery-figure">
-                        <img 
-                            className="gallery-img" 
-                            src="/public/images/shopping-helper-capture2.png"
-                            alt=""
-                        />
-                        <figcaption>Logged in UI with example lists, all collapsed.</figcaption>
-                    </figure>
-
-                    <figure className="gallery-figure">
-                        <img 
-                            className="gallery-img" 
-                            src="/public/images/shopping-helper-capture3.png"
-                            alt=""
-                        />
-                        <figcaption>Logged in UI with a list open.</figcaption>
-                    </figure>
-
-
-                </div>
+                <Gallery />
 
                 <ProjectLinks 
                     liveUrl="https://shopping-helper-list-organizer.netlify.app/"

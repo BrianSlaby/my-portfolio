@@ -1,15 +1,8 @@
 import React from "react"
 import { Link } from "react-router-dom"
+import { projectComponentProps } from "../../types"
 
-type projectProps = {
-    src: string,
-    alt: string,
-    title: string,
-    linkTo: string,
-    description: string
-}
-
-export default function Project({ src, alt, title, linkTo, description }: projectProps): React.ReactNode {
+export default function Project({ src, alt, title, linkTo, description }: projectComponentProps): React.ReactNode {
 
 
     return (

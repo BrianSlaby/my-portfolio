@@ -270,7 +270,7 @@ section {
   line-height: 2em;
 }
 
-.gallery-container {
+/* .gallery-container {
   display: flex;
   flex-direction: column;
   gap: 2em;
@@ -278,12 +278,9 @@ section {
 
 .gallery-figure {
   margin-left: 0;
-}
+} */
 
-.gallery-img {
-  border-radius: 10px;
-  width: 100%;
-}
+
 
 .project-links-container {
   display: flex;
