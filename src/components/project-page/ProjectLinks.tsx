@@ -1,7 +1,7 @@
 import React from "react"
 import { projectLinksProps } from "../../types"
 
-export default function ProjectLinks({ liveUrl, githubUrl }: projectLinksProps): React.ReactNode {
+export default function ProjectLinks({ liveUrl, githubUrl }: projectLinksProps): React.JSX.Element {
 
 
     return (

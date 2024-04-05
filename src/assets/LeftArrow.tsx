@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function LeftArrow(): React.ReactNode {
+export default function LeftArrow(): React.JSX.Element {
 
     return (
         <svg 

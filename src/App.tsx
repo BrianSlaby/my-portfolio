@@ -9,7 +9,7 @@ import ThirteenthAge from "./pages/ThirteenthAge"
 import Quizzical from "./pages/Quizzical"
 
 
-export default function App(): React.ReactNode {
+export default function App(): React.JSX.Element {
   
 
   return (

@@ -2,7 +2,7 @@ import React from "react"
 import { projectHeroHeaderProps } from "../../types"
 
 
-export default function ProjectHero({ title, description }: projectHeroHeaderProps): React.ReactNode {
+export default function ProjectHero({ title, description }: projectHeroHeaderProps): React.JSX.Element {
 
     return (
         <section className="hero-section">

@@ -5,7 +5,7 @@ import Projects from "../components/home/Projects"
 import Contact from "../components/home/Contact"
 
 
-export default function Home(): React.ReactNode {
+export default function Home(): React.JSX.Element {
 
 
     return(

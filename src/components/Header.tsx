@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "react-router-dom"
 import './components.css'
 
-export default function Header(): React.ReactNode {
+export default function Header(): React.JSX.Element {
 
     return(
         <header>

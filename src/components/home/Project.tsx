@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "react-router-dom"
 import { projectComponentProps } from "../../types"
 
-export default function Project({ src, alt, title, linkTo, description }: projectComponentProps): React.ReactNode {
+export default function Project({ src, alt, title, linkTo, description }: projectComponentProps): React.JSX.Element {
 
 
     return (

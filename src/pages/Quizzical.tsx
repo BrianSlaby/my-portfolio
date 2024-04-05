@@ -7,7 +7,7 @@ import Features from "../components/quizzical/Features"
 import Tech from "../components/quizzical/Tech"
 import Gallery from "../components/Gallery"
 
-export default function Quizzical(): React.ReactNode {
+export default function Quizzical(): React.JSX.Element {
 
     const galleryImages: galleryImage[] = [
         {

@@ -7,7 +7,7 @@ import Features from "../components/shopping-helper/Features"
 import Tech from "../components/shopping-helper/Tech"
 import Gallery from "../components/Gallery"
 
-export default function ShoppingHelper(): React.ReactNode {
+export default function ShoppingHelper(): React.JSX.Element {
 
     const galleryImages: galleryImage[] = [
         {

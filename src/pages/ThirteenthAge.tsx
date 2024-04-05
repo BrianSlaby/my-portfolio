@@ -7,7 +7,7 @@ import Features from "../components/thirteenth-age/Features"
 import Tech from "../components/thirteenth-age/Tech"
 import Gallery from "../components/Gallery"
 
-export default function ThirteenthAge(): React.ReactNode {
+export default function ThirteenthAge(): React.JSX.Element {
 
     const galleryImages: galleryImage[] = [
         {

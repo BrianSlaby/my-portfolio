@@ -1,7 +1,7 @@
 import React from "react"
 
 
-export default function Tech(): React.ReactNode {
+export default function Tech(): React.JSX.Element {
 
 
     return (

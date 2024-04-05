@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function About(): React.ReactNode {
+export default function About(): React.JSX.Element {
 
     return (
         <section id="about-section">

@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function Contact(): React.ReactNode {
+export default function Contact(): React.JSX.Element {
 
     return (
         <section id="contact-section">

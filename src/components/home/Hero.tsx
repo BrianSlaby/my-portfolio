@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function Hero(): React.ReactNode {
+export default function Hero(): React.JSX.Element {
 
     return (
         <section className="hero-section" id="hero-section">

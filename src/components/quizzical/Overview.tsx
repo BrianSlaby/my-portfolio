@@ -1,7 +1,7 @@
 import React from "react"
 
 
-export default function Overview(): React.ReactNode {
+export default function Overview(): React.JSX.Element {
 
     return (
         <>

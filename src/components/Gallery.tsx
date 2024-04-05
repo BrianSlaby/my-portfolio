@@ -4,7 +4,7 @@ import { galleryProps } from "../types"
 import LeftArrow from "../assets/LeftArrow"
 import RightArrow from "../assets/RightArrow"
 
-export default function Gallery({ galleryImages }: galleryProps): React.ReactNode {
+export default function Gallery({ galleryImages }: galleryProps): React.JSX.Element {
     const [ currentIndex, setCurrentIndex ] = useState<number>(0)
     const [ scrollPosition, setScrollPosition ] = useState<number>(0)
     const [ backBtnClass, setBackBtnClass ] = useState<"hidden" | "">("hidden")
