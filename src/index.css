@@ -33,7 +33,7 @@ h1 {
   font-size: 3rem;
   letter-spacing: 5px;
   text-align: center;
-  margin-top: 30vh;
+  margin-top: 15vh;
 }
 
 h2,
@@ -117,7 +117,7 @@ section {
 
 .arrow-container {
   position: absolute;
-  top: 90%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -296,14 +296,11 @@ section {
 @media (min-width: 700px) {
   h1 {
     font-size: 4rem;
+    margin-top: 30vh;
   }
 
   section {
     padding: 4em 2em;
-  }
-
-  .arrow-container {
-    top: 80%;
   }
 
   .about-container, 
