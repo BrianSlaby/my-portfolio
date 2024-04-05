@@ -1,3 +1,7 @@
+.gallery-outer-wrapper {
+    position: relative;
+}
+
 .gallery-container {
     display: flex;
     overflow-x: scroll;
@@ -21,8 +25,40 @@
     width: 100%;
 }
 
+.gallery-btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: var(--black-clr);
+}
+
+.gallery-btn:hover,
+.gallery-btn:focus {
+    fill: var(--primary-clr);
+}
+
+.back {
+    position: absolute;
+    z-index: 100;
+    top: 45%;
+    left: 5%;
+}
+
+.fwd {
+    position: absolute;
+    z-index: 100;
+    top: 45%;
+    right: 5%;
+}
+
 .hidden {
     display: none;
+}
+
+.gallery-btn-icon {
+    color: inherit;
+    opacity: 0.4;
+    pointer-events: none;
 }
 
 /* .current {

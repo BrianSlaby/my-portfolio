@@ -1,6 +1,8 @@
 import React, { useState, useRef, useEffect } from "react"
 import "../gallery.css"
 import { galleryImage } from "../../types"
+import LeftArrow from "../../assets/LeftArrow"
+import RightArrow from "../../assets/RightArrow"
 
 export default function Gallery(): React.ReactNode {
     const [ currentIndex, setCurrentIndex ] = useState<number>(0)
@@ -69,18 +71,18 @@ export default function Gallery(): React.ReactNode {
     }, [currentIndex])
 
     return (
-        <>
+        <div className="gallery-outer-wrapper">
         
             <button 
-                className={`gallery-btn ${backBtnClass}`} 
+                className={`gallery-btn back ${backBtnClass}`} 
                 onClick={toggleGalleryBackward}
             
-            >Back</button>
+            > <LeftArrow /> </button>
             <button 
-                className={`gallery-btn ${fwdBtnClass}`}
+                className={`gallery-btn fwd ${fwdBtnClass}`}
                 onClick={toggleGalleryForward} 
             
-            >Forward</button>
+            > <RightArrow /> </button>
 
             <div 
                 className="gallery-container"
@@ -107,6 +109,6 @@ export default function Gallery(): React.ReactNode {
             }
 
             </div>
-        </>
+        </div>
     )
 }
