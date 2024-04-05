@@ -48,7 +48,7 @@ p {
 }
 
 section {
-  padding: 4em 2em;
+  padding: 2em 0.5em;
   scroll-margin-top: 6.5em;
 }
 
@@ -227,7 +227,7 @@ section {
   display: grid;
   column-gap: 15%;
   row-gap: 4em;
-  padding: 2em 4em;
+  padding: 2em 1em;
 }
 
 .about-container {
@@ -263,6 +263,7 @@ section {
 .project-details-section {
   max-width: 750px;
   margin: 0 auto;
+  padding: 0 1em;
 }
 
 .features-container {
@@ -297,8 +298,18 @@ section {
     font-size: 4rem;
   }
 
+  section {
+    padding: 4em 2em;
+  }
+
   .arrow-container {
     top: 80%;
+  }
+
+  .about-container, 
+  .projects-container, 
+  .contact-container {
+    padding: 2em 4em;
   }
 
   .section-col-container {
