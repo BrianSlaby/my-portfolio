@@ -11,13 +11,20 @@ export default function Gallery({ galleryImages }: galleryProps): React.JSX.Elem
     const [ fwdBtnClass, setFwdBtnClass ] = useState<"hidden" | "">("")
 
     const galleryRef = useRef<HTMLDivElement | null>(null)
+    const touchStartX = useRef<number | null>(null)
+    const scrollIncrement = 750
 
+    console.log("currentIndex:", currentIndex)
+    console.log("scrollPosition:", scrollPosition)
 
     function toggleGalleryForward(): void {
         setCurrentIndex((prevIndex) => prevIndex + 1)
         setBackBtnClass("")
         
-        const newScrollPosition = scrollPosition + 750
+        let newScrollPosition = scrollPosition + scrollIncrement
+        if (newScrollPosition > galleryImages.length * scrollIncrement) {
+            newScrollPosition = galleryImages.length  * scrollIncrement
+        }
         setScrollPosition(newScrollPosition)
         if (galleryRef.current) {
             galleryRef.current.scrollLeft = newScrollPosition
@@ -28,10 +35,40 @@ export default function Gallery({ galleryImages }: galleryProps): React.JSX.Elem
         setCurrentIndex((prevIndex) => prevIndex - 1)
         setFwdBtnClass("")
        
-        const newScrollPosition = scrollPosition - 750
+        let newScrollPosition = scrollPosition - scrollIncrement
+        if (newScrollPosition < 0) {
+            newScrollPosition = 0
+        }
         setScrollPosition(newScrollPosition)
         if (galleryRef.current) {
             galleryRef.current.scrollLeft = newScrollPosition
+        }
+    }
+
+    function handleTouchStart(e: TouchEvent): void {
+        touchStartX.current = e.touches[0].clientX
+    }
+
+    function handleTouchScroll(e: TouchEvent): void {
+        if (touchStartX.current !== null) {
+            const touchEndX = e.touches[0].clientX
+            const difference = touchStartX.current - touchEndX
+            if (difference > 50) {
+                toggleGalleryForward()
+            } else if (difference < -50) {
+                toggleGalleryBackward()
+            }
+            touchStartX.current = null
+        }
+    }
+
+    function handleWheelScroll(e: WheelEvent): void {
+        if (e.deltaX !== 0) {
+            if (e.deltaX > 50) {
+                toggleGalleryForward()
+            } else if (e.deltaX < -50) {
+                toggleGalleryBackward()
+            }
         }
     }
 
@@ -45,6 +82,21 @@ export default function Gallery({ galleryImages }: galleryProps): React.JSX.Elem
         }
 
     }, [currentIndex])
+
+    useEffect(() => {
+        if (galleryRef.current) {
+            galleryRef.current.addEventListener("touchstart", handleTouchStart)
+            galleryRef.current.addEventListener("touchmove", handleTouchScroll)
+            galleryRef.current.addEventListener("wheel", handleWheelScroll)
+        }
+        return () => {
+            if (galleryRef.current) {
+                galleryRef.current.removeEventListener("touchstart", handleTouchStart)
+                galleryRef.current.removeEventListener("touchmove", handleTouchScroll)
+                galleryRef.current.removeEventListener("wheel", handleWheelScroll)
+            }
+        }
+    }, [])
 
     return (
         <div className="gallery-outer-wrapper">
