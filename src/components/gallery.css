@@ -30,6 +30,8 @@
     background-color: transparent;
     cursor: pointer;
     color: var(--black-clr);
+    z-index: 50;
+    position: absolute;
 }
 
 .gallery-btn:hover,
@@ -38,15 +40,11 @@
 }
 
 .back {
-    position: absolute;
-    z-index: 100;
     top: 45%;
     left: 5%;
 }
 
 .fwd {
-    position: absolute;
-    z-index: 100;
     top: 45%;
     right: 5%;
 }
@@ -61,6 +59,14 @@
     pointer-events: none;
 }
 
-/* .current {
-    border: 1px solid red;
-} */
+@media (max-width: 650px) {
+    .gallery-container {
+        flex-direction: column;
+        overflow-x: none;
+        scroll-snap-type: y;
+    }
+
+    .gallery-btn {
+        display: none;
+    }
+}

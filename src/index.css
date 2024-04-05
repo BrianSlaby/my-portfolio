@@ -30,7 +30,7 @@ h3,
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   letter-spacing: 5px;
   text-align: center;
   margin-top: 30vh;
@@ -117,7 +117,7 @@ section {
 
 .arrow-container {
   position: absolute;
-  top: 80%;
+  top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -293,6 +293,14 @@ section {
    ========================== */
 
 @media (min-width: 700px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  .arrow-container {
+    top: 80%;
+  }
+
   .section-col-container {
       flex-direction: row;
       align-items: flex-start;
