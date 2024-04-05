@@ -25,9 +25,14 @@ type galleryImage = {
     isCurrent: boolean
 }
 
+type galleryProps = {
+    galleryImages: galleryImage[]
+}
+
 export type {
     projectComponentProps,
     projectHeroHeaderProps,
     projectLinksProps,
-    galleryImage
+    galleryImage,
+    galleryProps
 }

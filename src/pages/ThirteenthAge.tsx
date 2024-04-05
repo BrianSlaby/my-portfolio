@@ -1,11 +1,37 @@
 import React from "react"
+import { galleryImage } from "../types"
 import ProjectHero from "../components/project-page/ProjectHero"
 import ProjectLinks from "../components/project-page/ProjectLinks"
 import Overview from "../components/thirteenth-age/Overview"
 import Features from "../components/thirteenth-age/Features"
 import Tech from "../components/thirteenth-age/Tech"
+import Gallery from "../components/Gallery"
 
 export default function ThirteenthAge(): React.ReactNode {
+
+    const galleryImages: galleryImage[] = [
+        {
+            url: "/public/images/13a-tracker-capture2.png",
+            alt: "",
+            caption: "13th Age Monster Tracker modal for filtering monsters by level.",
+            index: 0,
+            isCurrent: true
+        },
+        {
+            url: "/public/images/13a-tracker-capture3.png",
+            alt: "",
+            caption: "Dropdown for selecting monsters filtered by level within selection modal.",
+            index: 1,
+            isCurrent: false
+        },
+        {
+            url: "/public/images/13a-tracker-capture4.png",
+            alt: "",
+            caption: "Individual monster cards for tracking within combat. The first goblin grunt is staggered, represented by its current hit points in red. The goblin scum card is a group of 5 mooks, or weak monsters that fight as a single group and share a hit point pool.",
+            index: 2,
+            isCurrent: false
+        }
+    ]
 
     return (
         <div className="project-main-container">
@@ -25,36 +51,9 @@ export default function ThirteenthAge(): React.ReactNode {
 
                 <Tech />
 
-                <div className="gallery-container">
-                    <figure className="gallery-figure">
-                        <img 
-                            className="gallery-img" 
-                            src="/public/images/13a-tracker-capture2.png"
-                            alt=""
-                        />
-                        <figcaption>13th Age Monster Tracker modal for filtering monsters by level.</figcaption>
-                    </figure>
-
-                    <figure className="gallery-figure">
-                        <img 
-                            className="gallery-img" 
-                            src="/public/images/13a-tracker-capture3.png"
-                            alt=""
-                        />
-                        <figcaption>Dropdown for selecting monsters filtered by level within selection modal.</figcaption>
-                    </figure>
-
-                    <figure className="gallery-figure">
-                        <img 
-                            className="gallery-img" 
-                            src="/public/images/13a-tracker-capture4.png"
-                            alt=""
-                        />
-                        <figcaption>Individual monster cards for tracking within combat. The first goblin grunt is staggered, represented by its current hit points in red. The goblin scum card is a group of 5 mooks, or weak monsters that fight as a single group and share a hit point pool.</figcaption>
-                    </figure>
-
-
-                </div>
+                <Gallery 
+                    galleryImages={galleryImages}
+                />
 
                 <ProjectLinks 
                     liveUrl="https://13th-age-monster-tracker.netlify.app/"
