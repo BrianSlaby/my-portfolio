@@ -1,5 +1,7 @@
 import React from "react"
 import './components.css'
+import GithubIcon from "../assets/GithubIcon"
+import LinkedInIcon from "../assets/LinkedInIcon"
 
 export default function Footer(): React.JSX.Element {
 
@@ -11,12 +13,12 @@ export default function Footer(): React.JSX.Element {
             <div className="footer-links-container">
                 <div>
                     <a target="_blank" href="https://github.com/BrianSlaby">
-                        <img src="/icons/github.svg" alt="GitHub icon" />
+                        <GithubIcon />
                     </a>
                 </div>
                 <div>
                     <a target="_blank" href="https://www.linkedin.com/in/brian-slaby-78022388/">
-                        <img src="/icons/linkedin.svg" alt="LinkedIn icon" />
+                        <LinkedInIcon />
                     </a>
                 </div>
             </div>

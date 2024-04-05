@@ -11,21 +11,21 @@ export default function ThirteenthAge(): React.JSX.Element {
 
     const galleryImages: galleryImage[] = [
         {
-            url: "/public/images/13a-tracker-capture2.png",
+            url: "/images/13a-tracker-capture2.png",
             alt: "",
             caption: "13th Age Monster Tracker modal for filtering monsters by level.",
             index: 0,
             isCurrent: true
         },
         {
-            url: "/public/images/13a-tracker-capture3.png",
+            url: "/images/13a-tracker-capture3.png",
             alt: "",
             caption: "Dropdown for selecting monsters filtered by level within selection modal.",
             index: 1,
             isCurrent: false
         },
         {
-            url: "/public/images/13a-tracker-capture4.png",
+            url: "/images/13a-tracker-capture4.png",
             alt: "",
             caption: "Individual monster cards for tracking within combat. The first goblin grunt is staggered, represented by its current hit points in red. The goblin scum card is a group of 5 mooks, or weak monsters that fight as a single group and share a hit point pool.",
             index: 2,

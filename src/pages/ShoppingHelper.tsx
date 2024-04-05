@@ -11,21 +11,21 @@ export default function ShoppingHelper(): React.JSX.Element {
 
     const galleryImages: galleryImage[] = [
         {
-            url: "/public/images/shopping-helper-capture.png",
+            url: "/images/shopping-helper-capture.png",
             alt: "",
             caption: "Shopping Helper authentication screen.",
             index: 0,
             isCurrent: true
         },
         {
-            url: "/public/images/shopping-helper-capture2.png",
+            url: "/images/shopping-helper-capture2.png",
             alt: "",
             caption: "Logged in UI with example lists, all collapsed.",
             index: 1,
             isCurrent: false
         },
         {
-            url: "/public/images/shopping-helper-capture3.png",
+            url: "/images/shopping-helper-capture3.png",
             alt: "",
             caption: "Logged in UI with a list open.",
             index: 2,

@@ -16,7 +16,7 @@ export default function Projects(): React.JSX.Element {
             <div className="projects-container">
                     
                 <Project 
-                    src="/public/images/shopping-helper-capture.png"
+                    src="/images/shopping-helper-capture.png"
                     alt=""
                     title="Shopping Helper"
                     linkTo="/shopping-helper"
@@ -24,7 +24,7 @@ export default function Projects(): React.JSX.Element {
                 />
 
                 <Project 
-                    src="/public/images/13a-tracker-capture4.png"
+                    src="/images/13a-tracker-capture4.png"
                     alt=""
                     title="13th Age Monster Tracker"
                     linkTo="/13a-monster-tracker"
@@ -33,7 +33,7 @@ export default function Projects(): React.JSX.Element {
                 
                     
                 <Project 
-                    src="/public/images/quizzical-capture4.png"
+                    src="/images/quizzical-capture4.png"
                     alt=""
                     title="Quizzical"
                     linkTo="/quizzical"

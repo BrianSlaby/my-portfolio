@@ -11,21 +11,21 @@ export default function Quizzical(): React.JSX.Element {
 
     const galleryImages: galleryImage[] = [
         {
-            url: "/public/images/quizzical-capture2.png",
+            url: "/images/quizzical-capture2.png",
             alt: "",
             caption: "Dropdown menu for selecting category of quiz questions.",
             index: 0,
             isCurrent: true
         },
         {
-            url: "/public/images/quizzical-capture3.png",
+            url: "/images/quizzical-capture3.png",
             alt: "",
             caption: "Example quiz with answers selected.",
             index: 1,
             isCurrent: false
         },
         {
-            url: "/public/images/quizzical-capture4.png",
+            url: "/images/quizzical-capture4.png",
             alt: "",
             caption: "Quiz results screen with correct answers in green and incorrect answers in red.",
             index: 2,

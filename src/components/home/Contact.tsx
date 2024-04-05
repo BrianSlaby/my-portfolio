@@ -14,7 +14,7 @@ export default function Contact(): React.JSX.Element {
                 <p>Whether you have a job opportunity that matches my skills and experience, have questions about my work, or just want to say hello feel free to contact me. I can be reached at <span className="bold-text">brian.slaby@gmail.com</span>. You can also connect with me on <a href="https://www.linkedin.com/in/brian-slaby-78022388/">LinkedIn</a>, or check out the source code for my projects on <a href="https://github.com/BrianSlaby">GitHub</a>.</p>
                 
                 <div className="img-container contact-img-container">
-                    <img className="contact-img" src="/public/images/vecteezy-email.svg" alt="Disembodied cartoon hand holding a smartphone next to an open laptop, with a floating cartoon email icon suggesting email being sent or received."/>
+                    <img className="contact-img" src="/images/vecteezy-email.svg" alt="Disembodied cartoon hand holding a smartphone next to an open laptop, with a floating cartoon email icon suggesting email being sent or received."/>
                 </div>
                 
             </div>

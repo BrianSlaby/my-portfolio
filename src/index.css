@@ -191,8 +191,7 @@ section {
 
 .hero-section {
   min-height: 100vh;
-  /* CHANGE URL BEFORE DEPLOYING */
-  background-image: url(/public/images/sun-tornado.svg);
+  background-image: url(/images/sun-tornado.svg);
   background-size: cover;
   position: relative;
 }
