@@ -6,7 +6,7 @@ This is a portfolio website for me (Brian Slaby), to showcase my frontend develo
 
 ## Site URL
 
-[Brian Slaby portfolio site live link](https://brianslaby.com/)
+[Brian Slaby portfolio site](https://brianslaby.com/)
 
 ## Dependencies
 
